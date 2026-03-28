@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP Cricket Predictions</title>
+<title>Ansh Sarkar | VIP Cricket</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
@@ -16,135 +16,111 @@
 }
 
 body{
-    background:#0a0a0a;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #000);
     color:#fff;
 }
 
-/* NAVBAR */
+/* NAV */
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
+    padding:20px 60px;
+    backdrop-filter: blur(10px);
 }
 
-nav img{
-    width:120px;
+.logo{
+    font-size:24px;
+    font-weight:700;
+    background:linear-gradient(90deg,#00ffcc,#00aaff);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 nav a{
-    color:#fff;
-    text-decoration:none;
     margin-left:20px;
-    transition:0.3s;
+    text-decoration:none;
+    color:#aaa;
 }
-
-nav a:hover{
-    color:#00ffcc;
-}
+nav a:hover{color:#00ffcc}
 
 /* HERO */
 .hero{
-    height:90vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e');
-    background-size:cover;
 }
 
 .hero h1{
-    font-size:50px;
-    color:#00ffcc;
+    font-size:55px;
+    background:linear-gradient(90deg,#00ffcc,#00aaff);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .hero p{
-    margin:20px 0;
-    font-size:18px;
-    color:#ccc;
+    color:#bbb;
+    margin:10px 0;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border-radius:20px;
+    padding:30px;
+    margin-top:25px;
+    box-shadow:0 0 30px rgba(0,255,200,0.2);
 }
 
 /* BUTTON */
 .btn{
     padding:15px 35px;
-    background:#00ffcc;
+    border-radius:50px;
+    background:linear-gradient(90deg,#00ffcc,#00aaff);
     color:#000;
     border:none;
-    border-radius:30px;
     font-weight:bold;
     cursor:pointer;
-    margin-top:10px;
     transition:0.3s;
-    font-size:16px;
 }
-
 .btn:hover{
-    background:#00ccaa;
-    transform:scale(1.05);
+    transform:scale(1.08);
+    box-shadow:0 0 20px #00ffcc;
 }
 
 /* URGENCY */
 .urgency{
-    color:#ff4444;
+    color:#ff3b3b;
     font-weight:bold;
-    margin-top:10px;
+    margin-bottom:10px;
 }
 
 /* STATS */
 .stats{
     display:flex;
-    justify-content:space-around;
-    padding:60px 20px;
-    background:#111;
+    justify-content:center;
     flex-wrap:wrap;
+    margin-top:25px;
 }
 
-.stat-box{
+.stat{
+    margin:10px 20px;
     text-align:center;
-    margin:10px;
 }
 
-.stat-box h2{
+.stat h2{
     color:#00ffcc;
-    font-size:32px;
-}
-
-/* FEATURES */
-.features{
-    padding:60px 20px;
-    text-align:center;
-}
-
-.feature-box{
-    margin:20px;
-}
-
-/* CTA */
-.cta{
-    background:#00ffcc;
-    color:#000;
-    padding:50px;
-    text-align:center;
-}
-
-.cta .btn{
-    background:#000;
-    color:#00ffcc;
-}
-
-.cta .btn:hover{
-    background:#111;
 }
 
 /* FOOTER */
 footer{
     text-align:center;
     padding:20px;
-    background:#000;
-    color:#888;
+    color:#666;
 }
 
 </style>
@@ -152,76 +128,51 @@ footer{
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
-    <img src="logo.png" alt="logo">
+    <div class="logo">Ansh Sarkar</div>
     <div>
         <a href="#">Home</a>
         <a href="#">Results</a>
-        <a href="#">Join</a>
+        <a href="#">VIP</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-    <h1>🔥 VIP Cricket Predictions 🔥</h1>
-    <p>India’s Most Trusted Cricket Prediction Community</p>
 
-    <p class="urgency">⚡ Only Limited VIP Slots Left</p>
+    <h1>Ansh Sarkar</h1>
+    <p>Premium Cricket Prediction Community</p>
 
-    <a href="https://t.me/+tCJ7o6DeNykyNDY1" target="_blank">
-        <button class="btn">Join VIP Telegram 🚀</button>
-    </a>
+    <div class="card">
+
+        <p class="urgency">⚡ Only Limited VIP Slots Left</p>
+
+        <a href="https://t.me/+tCJ7o6DeNykyNDY1" target="_blank">
+            <button class="btn">Join VIP Telegram 🚀</button>
+        </a>
+
+        <div class="stats">
+            <div class="stat">
+                <h2>95%+</h2>
+                <p>Accuracy</p>
+            </div>
+            <div class="stat">
+                <h2>50K+</h2>
+                <p>Members</p>
+            </div>
+            <div class="stat">
+                <h2>₹10L+</h2>
+                <p>Profit</p>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
-<!-- STATS -->
-<section class="stats">
-    <div class="stat-box">
-        <h2>95%+</h2>
-        <p>Accuracy</p>
-    </div>
-    <div class="stat-box">
-        <h2>50K+</h2>
-        <p>Members</p>
-    </div>
-    <div class="stat-box">
-        <h2>₹10L+</h2>
-        <p>Profit Generated</p>
-    </div>
-</section>
-
-<!-- FEATURES -->
-<section class="features">
-    <h2>Why Choose Us?</h2>
-
-    <div class="feature-box">
-        <h3>✔️ Expert Analysis</h3>
-        <p>Deep match research & pitch reports</p>
-    </div>
-
-    <div class="feature-box">
-        <h3>✔️ Live Tips</h3>
-        <p>Real-time match predictions</p>
-    </div>
-
-    <div class="feature-box">
-        <h3>✔️ Trusted Community</h3>
-        <p>Thousands earning daily</p>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-    <h2>⚡ Get VIP Access Now</h2>
-
-    <a href="https://t.me/+tCJ7o6DeNykyNDY1" target="_blank">
-        <button class="btn">Join Telegram💰</button>
-    </a>
-</section>
-
-<!-- FOOTER -->
 <footer>
-    © 2026 VIP Cricket Predictions | All Rights Reserved
+© 2026 Ansh Sarkar | All Rights Reserved
 </footer>
 
 </body>
